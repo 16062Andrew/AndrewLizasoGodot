@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2tpuk1mvv8mn"]
+
+[ext_resource type="Texture2D" uid="uid://2lu14hgem41v" path="res://assets/WhiteBlock.png" id="1_sq4gb"]
+
+[node name="EndScreen" type="Node2D"]
+position = Vector2(579.5, 326)
+
+[node name="WhiteBlock" type="Sprite2D" parent="."]
+position = Vector2(-8.5, -3.49998)
+scale = Vector2(37.1875, 21.2812)
+texture = ExtResource("1_sq4gb")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -190.5
+offset_top = -140.0
+offset_right = 186.5
+offset_bottom = -71.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "THATS IT FOLKS"

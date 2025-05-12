@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://l6scy4xmb17a"]
+
+[ext_resource type="Script" path="res://p_2.gd" id="1_hbw2f"]
+[ext_resource type="Texture2D" uid="uid://2lu14hgem41v" path="res://assets/WhiteBlock.png" id="2_424oi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gumc5"]
+size = Vector2(16, 16)
+
+[node name="P2" type="CharacterBody2D"]
+collision_layer = 7
+collision_mask = 7
+script = ExtResource("1_hbw2f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_gumc5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_424oi")
