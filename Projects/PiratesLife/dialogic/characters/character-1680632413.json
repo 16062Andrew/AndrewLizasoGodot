@@ -1,0 +1,21 @@
+{
+	"color": "#ffffffff",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1680632413.json",
+	"mirror_portraits": false,
+	"name": "Captain",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": -164,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://3 - man in purple pirates coat with gold trim and .png"
+		}
+	],
+	"scale": 48,
+	"theme": ""
+}

@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://cojedqoudfk88"]
+
+[ext_resource type="Script" path="res://tag.gd" id="1_25u2k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_emf44"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_0s812"]
+size = Vector2(20, 20)
+
+[node name="Tag" type="Area2D"]
+scale = Vector2(2, 2)
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_25u2k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_emf44")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
+texture = SubResource("PlaceholderTexture2D_0s812")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

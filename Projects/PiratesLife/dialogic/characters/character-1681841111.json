@@ -1,0 +1,21 @@
+{
+	"color": "#ffffffff",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1681841111.json",
+	"mirror_portraits": false,
+	"name": "picture frame",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": -155,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://0 - framed picture of young man swimmer with troph.png"
+		}
+	],
+	"scale": 61,
+	"theme": ""
+}

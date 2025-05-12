@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://by58b4icaxpwv"]
+
+[ext_resource type="PackedScene" uid="uid://cpykde8178sck" path="res://p_1.tscn" id="1_gfw5s"]
+[ext_resource type="PackedScene" uid="uid://cjell2crp4ev" path="res://p_2.tscn" id="2_x7kkr"]
+[ext_resource type="PackedScene" uid="uid://cojedqoudfk88" path="res://tag.tscn" id="3_cf7d1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_slm81"]
+size = Vector2(1174, 20)
+
+[node name="Main" type="Node2D"]
+
+[node name="Tag" parent="." instance=ExtResource("3_cf7d1")]
+position = Vector2(494, 510)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(577, 643)
+shape = SubResource("RectangleShape2D_slm81")
+
+[node name="P1" parent="." instance=ExtResource("1_gfw5s")]
+position = Vector2(354, 552)
+
+[node name="P2" parent="." instance=ExtResource("2_x7kkr")]
+position = Vector2(678, 562)

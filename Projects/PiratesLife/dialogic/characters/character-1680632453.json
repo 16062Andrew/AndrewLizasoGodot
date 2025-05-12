@@ -1,0 +1,21 @@
+{
+	"color": "#ffffffff",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1680632453.json",
+	"mirror_portraits": false,
+	"name": "Plain Person",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 720,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://1 - plain woman mother in a white tee.png"
+		}
+	],
+	"scale": 48,
+	"theme": ""
+}

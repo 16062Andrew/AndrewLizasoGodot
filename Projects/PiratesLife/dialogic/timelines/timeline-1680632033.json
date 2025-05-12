@@ -1,0 +1,763 @@
+{
+	"events": [
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Reverie.mp3",
+			"volume": 0.25
+		},
+		{
+			"background": "res://1 - yellow and orange ocean with butterflies and b.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You open your eyes to see whales in the sky above you, they swim and move majestically across the deep blue plain. There are ships sails whipping in the wind around you."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You look over the edge of the ship, and see a huge butterfly fluttering in the water. The water has vibrant rays of orange and pink that don't belong, yet they fit in so perfectly among everything."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "You take a moment to look down at yourself, and notice that you are wearing a red pirates coat. Inside the pocket is one box of matches. You turn around and see the cabin of the ship, as well as a door leading to below deck."
+		},
+		{
+			"choice": "Go below decks",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Explore the cabin",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"background": "res://3 - cabin of a ship.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You're immediately greeted with the aroma of fresh herbs and flowers. The cabin is is cozy, containing a large bed, covered in quilts of every shape and color. Upon seeing it, you realize just how tired you feel. \nYou sit down on the bed, your eyelids drooping from the weight they carry. They're begging you to rest."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "But you can't. There's more of the ship to explore."
+		},
+		{
+			"choice": "Go below decks",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"background": "res://1 - below decks of a ship.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "As you enter below decks, you're completely surrounded in darkness. An unlit lantern hangs on a hook, so you grab it. Reaching into your pocket, you grab a match from the box and light the lantern.\nThe blaze illuminates the room. Barrels line the wall, and an elegant mahagony door resides in the right corner. There's also a shiny object on the left side, light glinting off of the metal."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "What do you do?"
+		},
+		{
+			"choice": "Explore behind the door",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You grab the bronze handle and open the door. A dark hallway is all that lays behind it. You raise your lantern, and start down the hall. After what feels like endless walking, you finally come upon another room. "
+		},
+		{
+			"background": "res://1 - hallway with three wooden doors.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Three doors are on the opposite wall."
+		},
+		{
+			"choice": "Open door 1",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"background": "res://2 - black room with spotlight.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Walking over slowly, you grab the handle and open the first door. \nThe room is completely black except for a bright spotlight in the middle of the room, suspended over a black metal chair. As you go closer, you suddenly realize that it's a wheelchair. \nHow curious. You quickly turn and leave the room."
+		},
+		{
+			"choice": "Open door 2",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"background": "res://3 - car accident.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Walking over slowly, you grab the handle and open the first door. \nThe room is completely empty, except for a broken steering wheel lying on the dark wooden floor. You bend over to pick it up, and an image flashes across your mind as you do.\nYour car, completely upside down on the side of the road. The smell of oil is filling your nostrils as you attempt to breathe, but you chest is constricted. The world goes black.\nYou snap back to reality and drop the wheel at your feet. You need to get out of this room."
+		},
+		{
+			"choice": "Open door 3",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"background": "res://2 - empty white hospital room with life support ma.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The hinges squeal as you push the door open. The room is completely white. An I.V. bag stands in the corner, and a weird looking machine sits in the other. It looks like a hospital room."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "What do you do?"
+		},
+		{
+			"choice": "Examine the machine",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "A screen sits on top of the machine, flashing multiple different charts. Wires portrude from every side of the machine. A label on the corner reads this:\nLife Support.\nYou quickly leave the room, your heart racing."
+		},
+		{
+			"choice": "Leave the room",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Examine the shiny object",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1681841111.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Grabbing the object in your hand, you realize that it's a picture frame. The frame surrounds a picture of a young man in a swimming cap, raising up a trophy. He looks familiar.\nYou leave the room."
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1681841111.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"background": "res://above deck.JPG",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "While leaving the room, you hear a jumble of voices. Following the chatter, you're led back above deck. You see two people."
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1680632413.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1680632413.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\"There you are! I've been looking everywhere for you!\""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The smiling person waves you over. He's dressed elegantly, wearing a lavender pirates coat with gold trim, and a huge hat with an even bigger feather sticking out of it."
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1680632453.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1680632453.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\"We've been desperate to speak with you.\""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The second person doesn't really fit into the environment. All they wear is a simple tee shirt and jeans. They look oddly familiar."
+		},
+		{
+			"character": "character-1680804093.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "\"Please, we have to talk.\""
+		},
+		{
+			"choice": "Talk to the Captain",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You find yourself unable to resist the chipper demeanor of the Captain. "
+		},
+		{
+			"character": "character-1680632413.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\"Welcome to paradise!\" He throws out his hands, highlighting the world around him."
+		},
+		{
+			"character": "character-1680804186.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\"Paradise? What do you mean?\""
+		},
+		{
+			"character": "character-1680632413.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "“I mean paradise! This world is specifically tailored to you and your want! It’s everything you could ever dream of!” He takes your hand. \"Now tell me, what do you want?\""
+		},
+		{
+			"character": "character-1680804186.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\"Well, I'm not sure. What can you give me?\""
+		},
+		{
+			"character": "character-1680632413.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\"Anything you desire!\""
+		},
+		{
+			"character": "character-1680804186.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\"Well I-\""
+		},
+		{
+			"character": "character-1680632453.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\"No! You can't listen to Him! He-\""
+		},
+		{
+			"character": "character-1680632413.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\"What do you think you're doing?\""
+		},
+		{
+			"character": "character-1680632453.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\"I'm trying to save them.\""
+		},
+		{
+			"choice": "Talk to the plain person",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The strange familiarity of the plain person draws you in. You can't help but approach them."
+		},
+		{
+			"character": "character-1680632453.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Thank goodness I found you, we don't have much time. We need to talk.\""
+		},
+		{
+			"character": "character-1680804186.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\"Talk? Talk about what?\" You take a deep breath. \"Am I in danger?\""
+		},
+		{
+			"character": "character-1680632453.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\"You-\""
+		},
+		{
+			"character": "character-1680632413.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\"You are fine! This place is a safe haven.\""
+		},
+		{
+			"character": "character-1680632453.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\"You have to listen to me! This place isn't what you think!\""
+		},
+		{
+			"character": "character-1680632413.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\"This place is anything they want it to be!\""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1680632453.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\"Please, you have to wake up!\""
+		},
+		{
+			"character": "character-1680632413.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\"Stay away from them! You're ruining everything!\""
+		},
+		{
+			"character": "character-1680804093.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "\"Listen to me, don't listen to them!\""
+		},
+		{
+			"choice": "Question the plain person",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1680804186.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\"Wh- why are you here? What are you doing to this place?"
+		},
+		{
+			"character": "character-1680632453.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\"I'm trying to save you! If you stay here you'll be trapped forever!\" Their voice breaks in a desperate cry."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "What’s so wrong with here? So far everything has been wonderful. The colorful sea gently rocking the boat, the gentle cries of the fish above you, the slow movement of the creatures below. \nEverything about this place seems to know you. To love you. It’s everything you could ever want. Independence. Adventure. Freedom. What’s so wrong with staying here?"
+		},
+		{
+			"character": "character-1680632413.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\"You see?\" The captain laughs and pats you on the back. \"Why would they want to go back to a world where their own body is a prison!\""
+		},
+		{
+			"character": "character-1680632453.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\"Please, please come back with me. Please come home.\""
+		},
+		{
+			"choice": "Question the Captain",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1680804186.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "“False reality?” You turn to the Captain, “What are they talking about?”"
+		},
+		{
+			"character": "character-1680632413.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "“You have to understand why I’m doing this-” "
+		},
+		{
+			"character": "character-1680804186.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "“Doing what? What are you doing?” You turn to The Plain Person, “What’s going on?” "
+		},
+		{
+			"character": "character-1680632413.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "“I made this place! I made everything here just for you! I know your heart’s deepest desires and I know that you can never have them out there! Why won’t you let me help you?\""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "You stare at the Captain. Then to the Plain Person. You can feel their eyes taking you in, hyper aware of every tiny change in your face. This isn’t real… You know that now. But do you really want to leave?"
+		},
+		{
+			"choice": "Leave.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You look around at the beautiful world around you. It’s filled to the brim with childlike wonder and whimsy. But you are no child. You can’t hide from the real world. You can’t hide from your problems. Not like this."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You steel yourself, preparing for whatever lies ahead."
+		},
+		{
+			"character": "character-1680804186.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "“I’m ready to go home.” "
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1680632413.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1680632453.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The energy seems to drain from the Captain’s body, their face twisting into a frown. You feel like you should say something to them, something to make it better, but you know it doesn’t matter. None of this is real. \nThe color fades from the world. The movement stops and the sounds die out. It all fades away, leaving you in nothingness. "
+		},
+		{
+			"background": "res://heaven.JPG",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You close your eyes. "
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Beeping. A slow, consistent beeping fills your ears. You try to move. It somewhat works. You feel the shifting of a blanket and sheets on your skin. The beeping continues.\n You hear a light gasp. Someone’s there with you. Waiting for you. A hand takes your own, squeezing you with all it’s might. \nYou want to stand up, leave the bed and greet the person holding you. You’re legs don’t move. You knew they wouldn’t move. "
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "“I know you’re there. Please, come back to me-” A familiar voice coos out to you. You’ve been listening to this voice for the past hour. "
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You want to open your eyes, but not yet. You’re not ready yet. Just one last moment before you wake up and face reality. One last moment before you truly come home. "
+		},
+		{
+			"choice": "Stay.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You can’t go back. You can’t go back to that life. You can’t go back to being trapped in your own body. You can’t live like that. You can hardly call it living."
+		},
+		{
+			"character": "character-1680804186.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "“I want to stay.”"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The Captain’s eyes light up at your words. He takes your hands and spins you around."
+		},
+		{
+			"character": "character-1680632413.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "“I knew it! I knew you’d make the right choice!” "
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1680632453.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Out of the corner of your eye you see the Plain Person slowly fade away. You almost thought they were crying. You couldn’t care less. Why would you care? You have the Captain. You have your paradise. What else could you need?"
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1680632413.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You're free."
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1680632033.json",
+		"name": "ConversationWithSanta"
+	}
+}

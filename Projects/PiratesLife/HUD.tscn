@@ -1,0 +1,53 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://GlorizVintage_PERSONAL_USE_ONLY.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://SaturdayMoonDemoRegular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://HUD.gd" type="Script" id=3]
+[ext_resource path="res://title.JPG" type="Texture" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 47
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 18
+font_data = ExtResource( 2 )
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource( 3 )
+
+[node name="Title" type="Sprite" parent="."]
+position = Vector2( 511.5, 320 )
+scale = Vector2( 2.00195, 1 )
+texture = ExtResource( 4 )
+
+[node name="MessageLabel" type="Label" parent="."]
+anchor_left = 0.312
+anchor_top = 0.353
+anchor_right = 0.68
+anchor_bottom = 0.572
+margin_left = 3.51199
+margin_top = -219.8
+margin_right = 8.67999
+margin_bottom = -220.2
+custom_fonts/font = SubResource( 1 )
+text = "Sailing to Heaven"
+align = 1
+valign = 1
+
+[node name="Button" type="Button" parent="."]
+anchor_left = 0.408
+anchor_top = 0.527
+anchor_right = 0.593
+anchor_bottom = 0.608
+margin_left = 3.20801
+margin_top = 206.8
+margin_right = 2.76801
+margin_bottom = 207.2
+custom_fonts/font = SubResource( 2 )
+text = "Begin the Game"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
