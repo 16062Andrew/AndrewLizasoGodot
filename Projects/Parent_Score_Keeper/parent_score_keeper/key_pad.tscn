@@ -1,0 +1,74 @@
+[gd_scene load_steps=2 format=3 uid="uid://12hpgbx0yrav"]
+
+[ext_resource type="Script" path="res://key_pad.gd" id="1_tkuve"]
+
+[node name="KeyPad" type="VBoxContainer"]
+size_flags_horizontal = 3
+script = ExtResource("1_tkuve")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "NAME"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "1"
+
+[node name="Button2" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "2"
+
+[node name="Button3" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "3"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "4"
+
+[node name="Button2" type="Button" parent="HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "5"
+
+[node name="Button3" type="Button" parent="HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "6"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "7"
+
+[node name="Button2" type="Button" parent="HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "8"
+
+[node name="Button3" type="Button" parent="HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "9"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+text = "0"

@@ -1,0 +1,115 @@
+[gd_scene load_steps=5 format=3 uid="uid://b1xh527qeykrf"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_lhq8t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tto2y"]
+size = Vector2(1181, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2unu7"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_4kqnc"]
+size = Vector2(20, 20)
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_lhq8t")
+
+[node name="Floor" type="Node2D" parent="."]
+position = Vector2(-579, -323)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Floor"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D"]
+position = Vector2(580.5, 658)
+shape = SubResource("RectangleShape2D_tto2y")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Floor"]
+position = Vector2(583, 576)
+scale = Vector2(10, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D2"]
+shape = SubResource("RectangleShape2D_2unu7")
+
+[node name="Sprite2D" type="Sprite2D" parent="Floor/StaticBody2D2"]
+modulate = Color(0, 0, 1, 1)
+texture = SubResource("PlaceholderTexture2D_4kqnc")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="Floor"]
+position = Vector2(911, 505)
+scale = Vector2(10, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D4"]
+shape = SubResource("RectangleShape2D_2unu7")
+
+[node name="Sprite2D" type="Sprite2D" parent="Floor/StaticBody2D4"]
+modulate = Color(0, 0, 1, 1)
+texture = SubResource("PlaceholderTexture2D_4kqnc")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Floor"]
+position = Vector2(283, 507)
+scale = Vector2(10, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D3"]
+shape = SubResource("RectangleShape2D_2unu7")
+
+[node name="Sprite2D" type="Sprite2D" parent="Floor/StaticBody2D3"]
+modulate = Color(0, 0, 1, 1)
+texture = SubResource("PlaceholderTexture2D_4kqnc")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Multiplayer" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/Multiplayer"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -115.0
+offset_top = -113.0
+offset_right = 115.0
+offset_bottom = 113.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="UI/Multiplayer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 50
+text = "Multiplayer thing"
+
+[node name="Host" type="Button" parent="UI/Multiplayer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Host"
+
+[node name="Join" type="Button" parent="UI/Multiplayer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Join"
+
+[node name="TextEdit" type="TextEdit" parent="UI/Multiplayer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+placeholder_text = "IP Adress"
+
+[node name="IP" type="Label" parent="UI"]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
+_spawnable_scenes = PackedStringArray("res://player.tscn")
+spawn_path = NodePath("..")
+
+[connection signal="pressed" from="UI/Multiplayer/VBoxContainer/Host" to="." method="_on_host_pressed"]
+[connection signal="pressed" from="UI/Multiplayer/VBoxContainer/Join" to="." method="_on_join_pressed"]
+[connection signal="text_changed" from="UI/Multiplayer/VBoxContainer/TextEdit" to="." method="_on_text_edit_text_changed"]

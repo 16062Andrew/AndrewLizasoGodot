@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=3 uid="uid://djo6p0ns8yhjk"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_7ccls"]
+[ext_resource type="PackedScene" uid="uid://dby62uf3tw75v" path="res://competitor.tscn" id="2_geobh"]
+[ext_resource type="PackedScene" uid="uid://12hpgbx0yrav" path="res://key_pad.tscn" id="3_mmslk"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7ccls")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 647.0
+
+[node name="Score" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Score"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Add Competitor" type="Button" parent="HBoxContainer/Score/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Add Competitor"
+
+[node name="Remove Competitor" type="Button" parent="HBoxContainer/Score/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Remove Competitor"
+
+[node name="Competitor1" parent="HBoxContainer/Score" instance=ExtResource("2_geobh")]
+layout_mode = 2
+
+[node name="KeyPad" parent="HBoxContainer" instance=ExtResource("3_mmslk")]
+layout_mode = 2
+
+[connection signal="pressed" from="HBoxContainer/Score/HBoxContainer/Add Competitor" to="." method="_on_add_competitor_pressed"]
+[connection signal="pressed" from="HBoxContainer/Score/HBoxContainer/Remove Competitor" to="." method="_on_remove_competitor_pressed"]
