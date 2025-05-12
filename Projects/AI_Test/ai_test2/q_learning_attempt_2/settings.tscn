@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=3 uid="uid://besinef6rj65p"]
+
+[ext_resource type="Script" path="res://settings.gd" id="1_oqt1e"]
+
+[node name="Settings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_oqt1e")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 1156.0
+offset_bottom = 648.0
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 100
+text = "Settings"
+horizontal_alignment = 1
+
+[node name="Bots" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 70
+text = "0 Bots"
+
+[node name="Speed" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 70
+text = "Speed: Normal"
+
+[node name="xy" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 70
+text = "x Changes "
+
+[node name="Back" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 70
+text = "Back"
+
+[connection signal="pressed" from="VBoxContainer/Bots" to="." method="_on_bots_pressed"]
+[connection signal="pressed" from="VBoxContainer/Speed" to="." method="_on_speed_pressed"]
+[connection signal="pressed" from="VBoxContainer/xy" to="." method="_on_xy_pressed"]
+[connection signal="pressed" from="VBoxContainer/Back" to="." method="_on_back_pressed"]

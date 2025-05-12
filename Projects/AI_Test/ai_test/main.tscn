@@ -1,0 +1,99 @@
+[gd_scene load_steps=7 format=3 uid="uid://3rvf1i1hva0x"]
+
+[ext_resource type="PackedScene" uid="uid://bmk2wmoyba7p4" path="res://character_base.tscn" id="1_6ljmj"]
+[ext_resource type="PackedScene" uid="uid://dxpax66u8pagj" path="res://ball.tscn" id="2_p6gtw"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_amkru"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vgjpg"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_p2676"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_0gb1i"]
+bounce = 0.5
+
+[node name="Main" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.693402, -0.557591, 0.456383, 0, 0.633381, 0.77384, -0.720551, 0.536582, -0.439187, 0, 0, 0)
+shadow_enabled = true
+
+[node name="CharacterBase" parent="." instance=ExtResource("1_6ljmj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.11837, 1)
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBase"]
+transform = Transform3D(1, 0, 0, 0, 0.666415, 0.745581, 0, -0.745581, 0.666415, 0, 8.19956, 7.3604)
+
+[node name="Platform" type="Node3D" parent="."]
+
+[node name="Floor" type="StaticBody3D" parent="Platform"]
+transform = Transform3D(50, 0, 0, 0, 1, 0, 0, 0, 50, 0, 0, -20.017)
+physics_material_override = SubResource("PhysicsMaterial_amkru")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform/Floor"]
+shape = SubResource("BoxShape3D_vgjpg")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Platform/Floor"]
+mesh = SubResource("BoxMesh_p2676")
+
+[node name="BackWall" type="StaticBody3D" parent="Platform"]
+transform = Transform3D(50, 0, 0, 0, -4.37114e-08, -5, 0, 1, -2.18557e-07, 0, 2.08552, -44.8375)
+physics_material_override = SubResource("PhysicsMaterial_amkru")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform/BackWall"]
+shape = SubResource("BoxShape3D_vgjpg")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Platform/BackWall"]
+mesh = SubResource("BoxMesh_p2676")
+
+[node name="RightWall" type="StaticBody3D" parent="Platform"]
+transform = Transform3D(-2.18557e-06, 1, -2.18557e-07, 0, -4.37114e-08, -5, -50, -4.37114e-08, 9.55343e-15, 24.5214, 2.08552, -19.9363)
+physics_material_override = SubResource("PhysicsMaterial_amkru")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform/RightWall"]
+shape = SubResource("BoxShape3D_vgjpg")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Platform/RightWall"]
+mesh = SubResource("BoxMesh_p2676")
+
+[node name="LeftWall" type="StaticBody3D" parent="Platform"]
+transform = Transform3D(-2.18557e-06, 1, -2.18557e-07, 0, -4.37114e-08, -5, -50, -4.37114e-08, 9.55343e-15, -24.97, 2.08552, -19.9426)
+physics_material_override = SubResource("PhysicsMaterial_amkru")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform/LeftWall"]
+shape = SubResource("BoxShape3D_vgjpg")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Platform/LeftWall"]
+mesh = SubResource("BoxMesh_p2676")
+
+[node name="FouthWall" type="StaticBody3D" parent="Platform"]
+transform = Transform3D(50, 0, 0, 0, -4.37114e-08, -5, 0, 1, -2.18557e-07, 0, 2.08552, 5.47103)
+visible = false
+physics_material_override = SubResource("PhysicsMaterial_amkru")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform/FouthWall"]
+shape = SubResource("BoxShape3D_vgjpg")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Platform/FouthWall"]
+mesh = SubResource("BoxMesh_p2676")
+
+[node name="Balls" type="Node3D" parent="."]
+
+[node name="Ball" parent="Balls" instance=ExtResource("2_p6gtw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 5.2377, 3.47508)
+physics_material_override = SubResource("PhysicsMaterial_0gb1i")
+
+[node name="Ball2" parent="Balls" instance=ExtResource("2_p6gtw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.13076, 3.53011, 0.956199)
+
+[node name="Ball3" parent="Balls" instance=ExtResource("2_p6gtw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0977001, 1.94874, 3.47508)
+physics_material_override = SubResource("PhysicsMaterial_0gb1i")
+
+[node name="Ball4" parent="Balls" instance=ExtResource("2_p6gtw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2.7458, 0.0374656)
+physics_material_override = SubResource("PhysicsMaterial_0gb1i")
+
+[node name="Ball5" parent="Balls" instance=ExtResource("2_p6gtw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.79959, 4.50014, 2.23402)
+physics_material_override = SubResource("PhysicsMaterial_0gb1i")
