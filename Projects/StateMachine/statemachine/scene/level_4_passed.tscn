@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=3 uid="uid://ck4ihktnb3na2"]
+
+[ext_resource type="Script" path="res://scripts/level_4_passed.gd" id="1_r76jv"]
+
+[node name="Level 4 passed" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_r76jv")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 91.0
+offset_right = 1153.0
+offset_bottom = 160.0
+theme_override_font_sizes/font_size = 50
+text = "You Passed Level 4"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 226.0
+offset_right = 1113.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 20
+text = "Do you hate yourself? Like all honesty do you hate your self? Because there is no way that someone enjoys this."
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 318.0
+offset_right = 1152.0
+offset_bottom = 647.0
+theme_override_font_sizes/font_size = 100
+text = "Level 5"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

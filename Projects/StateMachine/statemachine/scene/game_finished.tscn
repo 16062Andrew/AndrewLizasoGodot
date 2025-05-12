@@ -1,0 +1,59 @@
+[gd_scene load_steps=2 format=3 uid="uid://0jfia6yyr1o4"]
+
+[ext_resource type="Script" path="res://scripts/game_finished.gd" id="1_y8gob"]
+
+[node name="Game Finished" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_y8gob")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 91.0
+offset_right = 1153.0
+offset_bottom = 160.0
+theme_override_font_sizes/font_size = 50
+text = "You Beat The Game! For Now"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 226.0
+offset_right = 1079.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 20
+text = "More may or may not come in the future either way this button takes you back to the start"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 318.0
+offset_right = 1152.0
+offset_bottom = 647.0
+theme_override_font_sizes/font_size = 100
+text = "Back to Start"
+
+[node name="YourTime" type="Label" parent="."]
+layout_mode = 0
+offset_left = 878.0
+offset_top = 23.0
+offset_right = 1053.0
+offset_bottom = 57.0
+text = "Your Time"
+
+[node name="BestTime" type="Label" parent="."]
+layout_mode = 0
+offset_left = 879.0
+offset_top = 68.0
+offset_right = 1054.0
+offset_bottom = 102.0
+text = "Best Time"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,77 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8nc4qtixcrnj"]
+
+[ext_resource type="Script" path="res://scripts/start_screen.gd" id="1_ckmcc"]
+
+[node name="Start_Screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ckmcc")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+offset_left = 3.0
+offset_top = 91.0
+offset_right = 1153.0
+offset_bottom = 160.0
+theme_override_font_sizes/font_size = 50
+text = "Something Something Random Jump Thing"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 2
+offset_left = 78.0
+offset_top = 226.0
+offset_right = 1079.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 20
+text = "Jump button is listed in the top left corner and the left right movement is your mouse left and right click"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 2
+offset_left = 2.0
+offset_top = 318.0
+offset_right = 1152.0
+offset_bottom = 647.0
+theme_override_font_sizes/font_size = 100
+text = "Start"
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 0
+offset_left = 388.0
+offset_top = 160.0
+offset_right = 1111.0
+offset_bottom = 205.0
+rotation = 0.0825659
+text = "But Now With Some okay insults I guess                        Oh and Level 4"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 68.0
+offset_top = 48.0
+offset_right = 106.0
+offset_bottom = 69.0
+
+[node name="Button3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 871.0
+offset_top = 34.0
+offset_right = 1009.0
+offset_bottom = 74.0
+text = "Race Mode: False"
+
+[node name="Button4" type="Button" parent="."]
+layout_mode = 0
+offset_left = 558.0
+offset_top = 32.0
+offset_right = 699.0
+offset_bottom = 72.0
+text = "Mobile: False"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]

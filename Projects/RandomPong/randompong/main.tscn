@@ -1,0 +1,84 @@
+[gd_scene load_steps=8 format=3 uid="uid://bf5o7s6aasshh"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_86f5f"]
+[ext_resource type="PackedScene" uid="uid://c73cbcp8jxkot" path="res://ball.tscn" id="1_wa81d"]
+[ext_resource type="PackedScene" uid="uid://11ilo2sa8b8u" path="res://p_1.tscn" id="2_aq2v0"]
+[ext_resource type="PackedScene" uid="uid://b7ps4gc1bjaiy" path="res://p_2.tscn" id="3_u0gia"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_idn7l"]
+size = Vector2(1174, 20)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_1qfll"]
+size = Vector2(20, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_87i5j"]
+size = Vector2(38.5, 1301)
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_86f5f")
+
+[node name="Roof" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Roof"]
+position = Vector2(577, 0)
+shape = SubResource("RectangleShape2D_idn7l")
+
+[node name="Sprite2D" type="Sprite2D" parent="Roof"]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(577, 0)
+scale = Vector2(58.7, 1)
+texture = SubResource("PlaceholderTexture2D_1qfll")
+
+[node name="Floor" type="StaticBody2D" parent="."]
+position = Vector2(0, 649)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+position = Vector2(577, 0)
+shape = SubResource("RectangleShape2D_idn7l")
+
+[node name="Sprite2D" type="Sprite2D" parent="Floor"]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(577, 0)
+scale = Vector2(58.7, 1)
+texture = SubResource("PlaceholderTexture2D_1qfll")
+
+[node name="Left" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Left"]
+position = Vector2(-43, 341)
+shape = SubResource("RectangleShape2D_87i5j")
+
+[node name="Right" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Right"]
+position = Vector2(1201, 341)
+shape = SubResource("RectangleShape2D_87i5j")
+
+[node name="Ball" parent="." instance=ExtResource("1_wa81d")]
+position = Vector2(586, 341)
+
+[node name="P1" parent="." instance=ExtResource("2_aq2v0")]
+position = Vector2(78, 358)
+
+[node name="P2" parent="." instance=ExtResource("3_u0gia")]
+position = Vector2(1082, 354)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 40.0
+offset_top = 32.0
+offset_right = 141.0
+offset_bottom = 99.0
+theme_override_font_sizes/font_size = 50
+text = "0"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 1011.0
+offset_top = 34.0
+offset_right = 1112.0
+offset_bottom = 103.0
+theme_override_font_sizes/font_size = 50
+text = "0"
+horizontal_alignment = 2
+
+[connection signal="body_entered" from="Left" to="." method="_on_left_body_entered"]
+[connection signal="body_entered" from="Right" to="." method="_on_right_body_entered"]

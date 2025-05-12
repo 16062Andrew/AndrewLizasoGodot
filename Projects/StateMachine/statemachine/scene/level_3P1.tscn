@@ -1,0 +1,78 @@
+[gd_scene load_steps=8 format=3 uid="uid://cjw57gxd6p64t"]
+
+[ext_resource type="Script" path="res://scripts/level_3.gd" id="1_qemkf"]
+[ext_resource type="PackedScene" uid="uid://bmlbp4ows5wyb" path="res://scene/platform.tscn" id="2_65kur"]
+[ext_resource type="PackedScene" uid="uid://cfmwcttgdh8yr" path="res://scene/player_2.tscn" id="3_obapu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cjqwu"]
+size = Vector2(2.56772, 25096)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gqstf"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_pxj8n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dve6c"]
+
+[node name="Level 3" type="Node2D"]
+script = ExtResource("1_qemkf")
+
+[node name="platform5" parent="." instance=ExtResource("2_65kur")]
+position = Vector2(514, 97)
+scale = Vector2(70.13, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="platform5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="platform5/StaticBody2D"]
+position = Vector2(65.0123, -11717)
+shape = SubResource("RectangleShape2D_cjqwu")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="platform5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="platform5/StaticBody2D2"]
+position = Vector2(-60.2672, -11392)
+shape = SubResource("RectangleShape2D_cjqwu")
+
+[node name="Player2" parent="." instance=ExtResource("3_obapu")]
+position = Vector2(-2085, -13)
+
+[node name="Camera2D" type="Camera2D" parent="Player2"]
+zoom = Vector2(0.5, 0.5)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TalkBox" type="Label" parent="CanvasLayer"]
+offset_left = 197.0
+offset_top = 79.0
+offset_right = 319.0
+offset_bottom = 121.0
+theme_override_font_sizes/font_size = 30
+text = "Talk Box"
+horizontal_alignment = 1
+
+[node name="FinishLine" type="StaticBody2D" parent="."]
+position = Vector2(-1595, -126)
+scale = Vector2(20, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FinishLine"]
+shape = SubResource("RectangleShape2D_gqstf")
+
+[node name="Sprite2D" type="Sprite2D" parent="FinishLine"]
+modulate = Color(0, 0, 1, 1)
+scale = Vector2(20, 20)
+texture = SubResource("PlaceholderTexture2D_pxj8n")
+
+[node name="Finish" type="Area2D" parent="FinishLine"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FinishLine/Finish"]
+position = Vector2(0, -22)
+shape = SubResource("RectangleShape2D_dve6c")
+
+[node name="Area2D" type="Area2D" parent="FinishLine"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FinishLine/Area2D"]
+position = Vector2(0.0500031, -51)
+scale = Vector2(1.2, 1)
+shape = SubResource("RectangleShape2D_dve6c")
+
+[connection signal="body_entered" from="FinishLine/Finish" to="." method="_on_finish_body_entered"]
+[connection signal="body_entered" from="FinishLine/Area2D" to="." method="_on_area_2d_body_entered"]

@@ -1,0 +1,649 @@
+[gd_scene load_steps=14 format=3 uid="uid://ykuwoo7dgnlo"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_4b8ev"]
+[ext_resource type="Script" path="res://p_1.gd" id="2_0epuq"]
+[ext_resource type="Script" path="res://p_2.gd" id="3_q8c4c"]
+[ext_resource type="Script" path="res://p_3.gd" id="4_h2mhi"]
+[ext_resource type="Script" path="res://p_4.gd" id="5_oa67s"]
+[ext_resource type="Script" path="res://p_5.gd" id="6_nbbft"]
+[ext_resource type="Script" path="res://p_6.gd" id="7_4bhmw"]
+[ext_resource type="Script" path="res://p_7.gd" id="8_yrsjo"]
+[ext_resource type="Script" path="res://p_8.gd" id="9_bhhxd"]
+[ext_resource type="Script" path="res://p_9.gd" id="10_1p1la"]
+[ext_resource type="Script" path="res://p_10.gd" id="11_1n78r"]
+[ext_resource type="Script" path="res://p_11.gd" id="12_ipql1"]
+[ext_resource type="Script" path="res://p_12.gd" id="13_2wucw"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4b8ev")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 649.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.0
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Select what you want to edit"
+
+[node name="Button" type="Button" parent="HBoxContainer/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "score reset"
+
+[node name="Button2" type="Button" parent="HBoxContainer/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "reset"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="1" type="Button" parent="HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 25
+text = "1"
+
+[node name="2" type="Button" parent="HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 25
+text = "2"
+
+[node name="3" type="Button" parent="HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 25
+text = "3"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="4" type="Button" parent="HBoxContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 25
+text = "4"
+
+[node name="5" type="Button" parent="HBoxContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 25
+text = "5"
+
+[node name="6" type="Button" parent="HBoxContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 25
+text = "6"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="7" type="Button" parent="HBoxContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 25
+text = "7"
+
+[node name="8" type="Button" parent="HBoxContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 25
+text = "8"
+
+[node name="9" type="Button" parent="HBoxContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 25
+text = "9"
+
+[node name="0" type="Button" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+theme_override_font_sizes/font_size = 25
+text = "0"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="control" type="HBoxContainer" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Player" type="Label" parent="HBoxContainer/VBoxContainer2/control"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.58
+theme_override_font_sizes/font_size = 20
+text = "Player: Something Something"
+
+[node name="J1" type="Label" parent="HBoxContainer/VBoxContainer2/control"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J1: 0"
+
+[node name="J2" type="Label" parent="HBoxContainer/VBoxContainer2/control"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J2: 0"
+
+[node name="J3" type="Label" parent="HBoxContainer/VBoxContainer2/control"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J3: 0"
+
+[node name="Total" type="Label" parent="HBoxContainer/VBoxContainer2/control"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "Total"
+
+[node name="P1" type="HBoxContainer" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("2_0epuq")
+
+[node name="Player" type="TextEdit" parent="HBoxContainer/VBoxContainer2/P1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.58
+theme_override_font_sizes/font_size = 20
+placeholder_text = "Player: Something Something"
+
+[node name="J1" type="Button" parent="HBoxContainer/VBoxContainer2/P1"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J1: 0"
+
+[node name="J2" type="Button" parent="HBoxContainer/VBoxContainer2/P1"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J2: 0"
+
+[node name="J3" type="Button" parent="HBoxContainer/VBoxContainer2/P1"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J3: 0"
+
+[node name="Total" type="Label" parent="HBoxContainer/VBoxContainer2/P1"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "Total"
+
+[node name="P2" type="HBoxContainer" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("3_q8c4c")
+
+[node name="Player" type="TextEdit" parent="HBoxContainer/VBoxContainer2/P2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.58
+theme_override_font_sizes/font_size = 20
+placeholder_text = "Player: Something Something"
+
+[node name="J1" type="Button" parent="HBoxContainer/VBoxContainer2/P2"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J1: 0"
+
+[node name="J2" type="Button" parent="HBoxContainer/VBoxContainer2/P2"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J2: 0"
+
+[node name="J3" type="Button" parent="HBoxContainer/VBoxContainer2/P2"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J3: 0"
+
+[node name="Total" type="Label" parent="HBoxContainer/VBoxContainer2/P2"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "Total"
+
+[node name="P3" type="HBoxContainer" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("4_h2mhi")
+
+[node name="Player" type="TextEdit" parent="HBoxContainer/VBoxContainer2/P3"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.58
+theme_override_font_sizes/font_size = 20
+placeholder_text = "Player: Something Something"
+
+[node name="J1" type="Button" parent="HBoxContainer/VBoxContainer2/P3"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J1: 0"
+
+[node name="J2" type="Button" parent="HBoxContainer/VBoxContainer2/P3"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J2: 0"
+
+[node name="J3" type="Button" parent="HBoxContainer/VBoxContainer2/P3"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J3: 0"
+
+[node name="Total" type="Label" parent="HBoxContainer/VBoxContainer2/P3"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "Total"
+
+[node name="P4" type="HBoxContainer" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("5_oa67s")
+
+[node name="Player" type="TextEdit" parent="HBoxContainer/VBoxContainer2/P4"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.58
+theme_override_font_sizes/font_size = 20
+placeholder_text = "Player: Something Something"
+
+[node name="J1" type="Button" parent="HBoxContainer/VBoxContainer2/P4"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J1: 0"
+
+[node name="J2" type="Button" parent="HBoxContainer/VBoxContainer2/P4"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J2: 0"
+
+[node name="J3" type="Button" parent="HBoxContainer/VBoxContainer2/P4"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J3: 0"
+
+[node name="Total" type="Label" parent="HBoxContainer/VBoxContainer2/P4"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "Total"
+
+[node name="P5" type="HBoxContainer" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("6_nbbft")
+
+[node name="Player" type="TextEdit" parent="HBoxContainer/VBoxContainer2/P5"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.58
+theme_override_font_sizes/font_size = 20
+placeholder_text = "Player: Something Something"
+
+[node name="J1" type="Button" parent="HBoxContainer/VBoxContainer2/P5"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J1: 0"
+
+[node name="J2" type="Button" parent="HBoxContainer/VBoxContainer2/P5"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J2: 0"
+
+[node name="J3" type="Button" parent="HBoxContainer/VBoxContainer2/P5"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J3: 0"
+
+[node name="Total" type="Label" parent="HBoxContainer/VBoxContainer2/P5"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "Total"
+
+[node name="P6" type="HBoxContainer" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("7_4bhmw")
+
+[node name="Player" type="TextEdit" parent="HBoxContainer/VBoxContainer2/P6"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.58
+theme_override_font_sizes/font_size = 20
+placeholder_text = "Player: Something Something"
+
+[node name="J1" type="Button" parent="HBoxContainer/VBoxContainer2/P6"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J1: 0"
+
+[node name="J2" type="Button" parent="HBoxContainer/VBoxContainer2/P6"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J2: 0"
+
+[node name="J3" type="Button" parent="HBoxContainer/VBoxContainer2/P6"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J3: 0"
+
+[node name="Total" type="Label" parent="HBoxContainer/VBoxContainer2/P6"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "Total"
+
+[node name="P7" type="HBoxContainer" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("8_yrsjo")
+
+[node name="Player" type="TextEdit" parent="HBoxContainer/VBoxContainer2/P7"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.58
+theme_override_font_sizes/font_size = 20
+placeholder_text = "Player: Something Something"
+
+[node name="J1" type="Button" parent="HBoxContainer/VBoxContainer2/P7"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J1: 0"
+
+[node name="J2" type="Button" parent="HBoxContainer/VBoxContainer2/P7"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J2: 0"
+
+[node name="J3" type="Button" parent="HBoxContainer/VBoxContainer2/P7"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J3: 0"
+
+[node name="Total" type="Label" parent="HBoxContainer/VBoxContainer2/P7"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "Total"
+
+[node name="P8" type="HBoxContainer" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("9_bhhxd")
+
+[node name="Player" type="TextEdit" parent="HBoxContainer/VBoxContainer2/P8"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.58
+theme_override_font_sizes/font_size = 20
+placeholder_text = "Player: Something Something"
+
+[node name="J1" type="Button" parent="HBoxContainer/VBoxContainer2/P8"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J1: 0"
+
+[node name="J2" type="Button" parent="HBoxContainer/VBoxContainer2/P8"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J2: 0"
+
+[node name="J3" type="Button" parent="HBoxContainer/VBoxContainer2/P8"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J3: 0"
+
+[node name="Total" type="Label" parent="HBoxContainer/VBoxContainer2/P8"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "Total"
+
+[node name="P9" type="HBoxContainer" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("10_1p1la")
+
+[node name="Player" type="TextEdit" parent="HBoxContainer/VBoxContainer2/P9"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.58
+theme_override_font_sizes/font_size = 20
+placeholder_text = "Player: Something Something"
+
+[node name="J1" type="Button" parent="HBoxContainer/VBoxContainer2/P9"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J1: 0"
+
+[node name="J2" type="Button" parent="HBoxContainer/VBoxContainer2/P9"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J2: 0"
+
+[node name="J3" type="Button" parent="HBoxContainer/VBoxContainer2/P9"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J3: 0"
+
+[node name="Total" type="Label" parent="HBoxContainer/VBoxContainer2/P9"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "Total"
+
+[node name="P10" type="HBoxContainer" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("11_1n78r")
+
+[node name="Player" type="TextEdit" parent="HBoxContainer/VBoxContainer2/P10"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.58
+theme_override_font_sizes/font_size = 20
+placeholder_text = "Player: Something Something"
+
+[node name="J1" type="Button" parent="HBoxContainer/VBoxContainer2/P10"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J1: 0"
+
+[node name="J2" type="Button" parent="HBoxContainer/VBoxContainer2/P10"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J2: 0"
+
+[node name="J3" type="Button" parent="HBoxContainer/VBoxContainer2/P10"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J3: 0"
+
+[node name="Total" type="Label" parent="HBoxContainer/VBoxContainer2/P10"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "Total"
+
+[node name="P11" type="HBoxContainer" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("12_ipql1")
+
+[node name="Player" type="TextEdit" parent="HBoxContainer/VBoxContainer2/P11"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.58
+theme_override_font_sizes/font_size = 20
+placeholder_text = "Player: Something Something"
+
+[node name="J1" type="Button" parent="HBoxContainer/VBoxContainer2/P11"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J1: 0"
+
+[node name="J2" type="Button" parent="HBoxContainer/VBoxContainer2/P11"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J2: 0"
+
+[node name="J3" type="Button" parent="HBoxContainer/VBoxContainer2/P11"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J3: 0"
+
+[node name="Total" type="Label" parent="HBoxContainer/VBoxContainer2/P11"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "Total"
+
+[node name="P12" type="HBoxContainer" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("13_2wucw")
+
+[node name="Player" type="TextEdit" parent="HBoxContainer/VBoxContainer2/P12"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.58
+theme_override_font_sizes/font_size = 20
+placeholder_text = "Player: Something Something"
+
+[node name="J1" type="Button" parent="HBoxContainer/VBoxContainer2/P12"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J1: 0"
+
+[node name="J2" type="Button" parent="HBoxContainer/VBoxContainer2/P12"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J2: 0"
+
+[node name="J3" type="Button" parent="HBoxContainer/VBoxContainer2/P12"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "J3: 0"
+
+[node name="Total" type="Label" parent="HBoxContainer/VBoxContainer2/P12"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "Total"
+
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/HBoxContainer4/Button" to="." method="_on_score_reset_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/HBoxContainer4/Button2" to="." method="_on_reset_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/HBoxContainer/1" to="." method="_on_1_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/HBoxContainer/2" to="." method="_on_2_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/HBoxContainer/3" to="." method="_on_3_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/HBoxContainer2/4" to="." method="_on_4_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/HBoxContainer2/5" to="." method="_on_5_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/HBoxContainer2/6" to="." method="_on_6_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/HBoxContainer3/7" to="." method="_on_7_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/HBoxContainer3/8" to="." method="_on_8_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/HBoxContainer3/9" to="." method="_on_9_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/0" to="." method="_on__pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P1/J1" to="HBoxContainer/VBoxContainer2/P1" method="_on_j_1_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P1/J2" to="HBoxContainer/VBoxContainer2/P1" method="_on_j_2_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P1/J3" to="HBoxContainer/VBoxContainer2/P1" method="_on_j_3_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P2/J1" to="HBoxContainer/VBoxContainer2/P2" method="_on_j_1_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P2/J2" to="HBoxContainer/VBoxContainer2/P2" method="_on_j_2_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P2/J3" to="HBoxContainer/VBoxContainer2/P2" method="_on_j_3_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P3/J1" to="HBoxContainer/VBoxContainer2/P3" method="_on_j_1_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P3/J2" to="HBoxContainer/VBoxContainer2/P3" method="_on_j_2_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P3/J3" to="HBoxContainer/VBoxContainer2/P3" method="_on_j_3_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P4/J1" to="HBoxContainer/VBoxContainer2/P4" method="_on_j_1_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P4/J2" to="HBoxContainer/VBoxContainer2/P4" method="_on_j_2_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P4/J3" to="HBoxContainer/VBoxContainer2/P4" method="_on_j_3_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P5/J1" to="HBoxContainer/VBoxContainer2/P5" method="_on_j_1_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P5/J2" to="HBoxContainer/VBoxContainer2/P5" method="_on_j_2_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P5/J3" to="HBoxContainer/VBoxContainer2/P5" method="_on_j_3_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P6/J1" to="HBoxContainer/VBoxContainer2/P6" method="_on_j_1_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P6/J2" to="HBoxContainer/VBoxContainer2/P6" method="_on_j_2_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P6/J3" to="HBoxContainer/VBoxContainer2/P6" method="_on_j_3_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P7/J1" to="HBoxContainer/VBoxContainer2/P7" method="_on_j_1_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P7/J2" to="HBoxContainer/VBoxContainer2/P7" method="_on_j_2_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P7/J3" to="HBoxContainer/VBoxContainer2/P7" method="_on_j_3_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P8/J1" to="HBoxContainer/VBoxContainer2/P8" method="_on_j_1_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P8/J2" to="HBoxContainer/VBoxContainer2/P8" method="_on_j_2_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P8/J3" to="HBoxContainer/VBoxContainer2/P8" method="_on_j_3_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P9/J1" to="HBoxContainer/VBoxContainer2/P9" method="_on_j_1_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P9/J2" to="HBoxContainer/VBoxContainer2/P9" method="_on_j_2_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P9/J3" to="HBoxContainer/VBoxContainer2/P9" method="_on_j_3_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P10/J1" to="HBoxContainer/VBoxContainer2/P10" method="_on_j_1_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P10/J2" to="HBoxContainer/VBoxContainer2/P10" method="_on_j_2_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P10/J3" to="HBoxContainer/VBoxContainer2/P10" method="_on_j_3_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P11/J1" to="HBoxContainer/VBoxContainer2/P11" method="_on_j_1_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P11/J2" to="HBoxContainer/VBoxContainer2/P11" method="_on_j_2_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P11/J3" to="HBoxContainer/VBoxContainer2/P11" method="_on_j_3_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P12/J1" to="HBoxContainer/VBoxContainer2/P12" method="_on_j_1_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P12/J2" to="HBoxContainer/VBoxContainer2/P12" method="_on_j_2_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/P12/J3" to="HBoxContainer/VBoxContainer2/P12" method="_on_j_3_pressed"]

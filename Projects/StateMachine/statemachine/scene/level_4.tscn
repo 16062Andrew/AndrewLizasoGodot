@@ -1,0 +1,887 @@
+[gd_scene load_steps=6 format=3 uid="uid://hdyurs4b5rcr"]
+
+[ext_resource type="PackedScene" uid="uid://bmlbp4ows5wyb" path="res://scene/platform.tscn" id="1_mot0a"]
+[ext_resource type="Script" path="res://scripts/finish_l_4.gd" id="2_7nu3p"]
+[ext_resource type="PackedScene" uid="uid://b2xpkkcct4nn3" path="res://scene/PlayerUpSideDown.tscn" id="3_sjudg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c6nsk"]
+size = Vector2(2.56772, 25096)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q8qlb"]
+size = Vector2(126, 20)
+
+[node name="LEVEL4" type="Node2D"]
+scale = Vector2(1, -1)
+
+[node name="platform1" parent="." instance=ExtResource("1_mot0a")]
+position = Vector2(0, 24)
+
+[node name="platform5" parent="." instance=ExtResource("1_mot0a")]
+position = Vector2(604, 79)
+scale = Vector2(55.005, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="platform5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="platform5/StaticBody2D"]
+position = Vector2(64.7941, -11712)
+shape = SubResource("RectangleShape2D_c6nsk")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="platform5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="platform5/StaticBody2D2"]
+position = Vector2(-60.2672, -11392)
+shape = SubResource("RectangleShape2D_c6nsk")
+
+[node name="platform2" type="Node2D" parent="."]
+
+[node name="platform2" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(302, -39)
+
+[node name="platform3" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(609, -107)
+
+[node name="platform4" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(921, -161)
+
+[node name="platform5" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1223, -236)
+
+[node name="platform6" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1530, -304)
+
+[node name="platform7" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1842, -358)
+
+[node name="platform8" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2124, -433)
+
+[node name="platform9" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2431, -501)
+
+[node name="platform10" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2743, -555)
+
+[node name="platform11" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(3045, -630)
+
+[node name="platform12" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(3352, -698)
+
+[node name="platform13" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(3664, -752)
+
+[node name="platform14" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(3352, -842)
+
+[node name="platform15" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(3054, -910)
+
+[node name="platform16" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2760, -964)
+
+[node name="platform17" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2457, -1039)
+
+[node name="platform18" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2145, -1107)
+
+[node name="platform19" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1878, -1161)
+
+[node name="platform20" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1582, -1236)
+
+[node name="platform21" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1283, -1304)
+
+[node name="platform22" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(949, -1358)
+
+[node name="platform23" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(633, -1433)
+
+[node name="platform24" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(348, -1501)
+
+[node name="platform25" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(45, -1566)
+
+[node name="platform26" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-204, -1655)
+
+[node name="platform27" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-502, -1723)
+
+[node name="platform28" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-796, -1777)
+
+[node name="platform29" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-1099, -1852)
+
+[node name="platform30" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-1411, -1920)
+
+[node name="platform31" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-1678, -1974)
+
+[node name="platform32" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-1974, -2049)
+
+[node name="platform33" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-2273, -2117)
+
+[node name="platform34" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-2562, -2175)
+
+[node name="platform35" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-2274, -2265)
+
+[node name="platform36" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-1967, -2333)
+
+[node name="platform37" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-1655, -2387)
+
+[node name="platform38" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-1353, -2462)
+
+[node name="platform39" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-1046, -2530)
+
+[node name="platform40" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-734, -2584)
+
+[node name="platform41" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-452, -2659)
+
+[node name="platform42" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-145, -2727)
+
+[node name="platform43" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(167, -2781)
+
+[node name="platform44" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(469, -2856)
+
+[node name="platform45" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(776, -2924)
+
+[node name="platform46" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1088, -2978)
+
+[node name="platform47" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1351, -3045)
+
+[node name="platform48" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1658, -3113)
+
+[node name="platform49" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1970, -3167)
+
+[node name="platform50" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2272, -3242)
+
+[node name="platform51" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2579, -3310)
+
+[node name="platform52" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2891, -3364)
+
+[node name="platform53" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(3173, -3439)
+
+[node name="platform54" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(3480, -3507)
+
+[node name="platform55" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(3792, -3561)
+
+[node name="platform56" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(3479, -3686)
+
+[node name="platform57" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(3181, -3754)
+
+[node name="platform58" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2887, -3808)
+
+[node name="platform59" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2584, -3883)
+
+[node name="platform60" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2272, -3951)
+
+[node name="platform61" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2005, -4005)
+
+[node name="platform62" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1709, -4080)
+
+[node name="platform63" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1410, -4148)
+
+[node name="platform64" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1076, -4202)
+
+[node name="platform65" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(760, -4277)
+
+[node name="platform66" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(475, -4345)
+
+[node name="platform67" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(172, -4410)
+
+[node name="platform68" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-77, -4499)
+
+[node name="platform69" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-375, -4567)
+
+[node name="platform70" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-669, -4621)
+
+[node name="platform71" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-972, -4696)
+
+[node name="platform72" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-1284, -4764)
+
+[node name="platform73" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-1551, -4818)
+
+[node name="platform74" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-1847, -4893)
+
+[node name="platform75" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-2146, -4961)
+
+[node name="platform76" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-2435, -5019)
+
+[node name="platform77" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-2147, -5109)
+
+[node name="platform78" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-1840, -5177)
+
+[node name="platform79" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-1528, -5231)
+
+[node name="platform80" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-1226, -5306)
+
+[node name="platform81" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-919, -5374)
+
+[node name="platform82" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-607, -5428)
+
+[node name="platform83" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-325, -5503)
+
+[node name="platform84" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-18, -5571)
+
+[node name="platform85" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(294, -5625)
+
+[node name="platform86" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(596, -5700)
+
+[node name="platform87" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(903, -5768)
+
+[node name="platform88" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1215, -5822)
+
+[node name="platform89" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1478, -5889)
+
+[node name="platform90" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1785, -5957)
+
+[node name="platform91" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2097, -6011)
+
+[node name="platform92" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2399, -6086)
+
+[node name="platform93" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2706, -6154)
+
+[node name="platform94" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(3018, -6208)
+
+[node name="platform95" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(3300, -6283)
+
+[node name="platform96" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(3607, -6351)
+
+[node name="platform97" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(3919, -6405)
+
+[node name="platform98" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(3613, -6489)
+
+[node name="platform99" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(3315, -6557)
+
+[node name="platform100" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(3021, -6611)
+
+[node name="platform101" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2718, -6686)
+
+[node name="platform102" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2406, -6754)
+
+[node name="platform103" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2139, -6808)
+
+[node name="platform104" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1843, -6883)
+
+[node name="platform105" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1544, -6951)
+
+[node name="platform106" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1210, -7005)
+
+[node name="platform107" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(894, -7080)
+
+[node name="platform108" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(609, -7148)
+
+[node name="platform109" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(306, -7213)
+
+[node name="platform110" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(57, -7302)
+
+[node name="platform111" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-241, -7370)
+
+[node name="platform112" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-535, -7424)
+
+[node name="platform113" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-838, -7499)
+
+[node name="platform114" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-1150, -7567)
+
+[node name="platform115" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-1417, -7621)
+
+[node name="platform116" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-1713, -7696)
+
+[node name="platform117" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-2012, -7764)
+
+[node name="platform118" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-2301, -7822)
+
+[node name="platform119" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-2013, -7912)
+
+[node name="platform120" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-1706, -7980)
+
+[node name="platform121" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-1394, -8034)
+
+[node name="platform122" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-1092, -8109)
+
+[node name="platform123" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-785, -8177)
+
+[node name="platform124" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-473, -8231)
+
+[node name="platform125" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-191, -8306)
+
+[node name="platform126" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(116, -8374)
+
+[node name="platform127" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(428, -8428)
+
+[node name="platform128" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(730, -8503)
+
+[node name="platform129" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1037, -8571)
+
+[node name="platform130" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1349, -8625)
+
+[node name="platform131" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1612, -8692)
+
+[node name="platform132" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1919, -8760)
+
+[node name="platform133" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2231, -8814)
+
+[node name="platform134" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2533, -8889)
+
+[node name="platform135" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2840, -8957)
+
+[node name="platform136" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(3152, -9011)
+
+[node name="platform137" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(3434, -9086)
+
+[node name="platform138" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(3726, -9149)
+
+[node name="platform139" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(4000, -9200)
+
+[node name="platform140" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(3729, -9334)
+
+[node name="platform141" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(3431, -9402)
+
+[node name="platform142" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(3137, -9456)
+
+[node name="platform143" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2834, -9531)
+
+[node name="platform144" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2522, -9599)
+
+[node name="platform145" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2255, -9653)
+
+[node name="platform146" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1959, -9728)
+
+[node name="platform147" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1660, -9796)
+
+[node name="platform148" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1326, -9850)
+
+[node name="platform149" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1010, -9925)
+
+[node name="platform150" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(725, -9993)
+
+[node name="platform151" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(422, -10058)
+
+[node name="platform152" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(173, -10147)
+
+[node name="platform153" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-125, -10215)
+
+[node name="platform154" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-419, -10269)
+
+[node name="platform155" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-722, -10344)
+
+[node name="platform156" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-1034, -10412)
+
+[node name="platform157" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-1301, -10466)
+
+[node name="platform158" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-1597, -10541)
+
+[node name="platform159" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-1896, -10609)
+
+[node name="platform160" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-2185, -10667)
+
+[node name="platform161" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-1897, -10757)
+
+[node name="platform162" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-1590, -10825)
+
+[node name="platform163" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-1278, -10879)
+
+[node name="platform164" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-976, -10954)
+
+[node name="platform165" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-669, -11022)
+
+[node name="platform166" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-357, -11076)
+
+[node name="platform167" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(-75, -11151)
+
+[node name="platform168" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(232, -11219)
+
+[node name="platform169" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(544, -11273)
+
+[node name="platform170" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(846, -11348)
+
+[node name="platform171" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1153, -11416)
+
+[node name="platform172" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1465, -11470)
+
+[node name="platform173" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1728, -11537)
+
+[node name="platform174" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2035, -11605)
+
+[node name="platform175" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2347, -11659)
+
+[node name="platform176" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2649, -11734)
+
+[node name="platform177" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2956, -11802)
+
+[node name="platform178" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(3268, -11856)
+
+[node name="platform179" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(3550, -11931)
+
+[node name="platform180" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(3857, -11999)
+
+[node name="platform181" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(4045, -12087)
+
+[node name="platform14" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-316, -103)
+
+[node name="platform15" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-614, -171)
+
+[node name="platform16" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-908, -225)
+
+[node name="platform17" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-1211, -300)
+
+[node name="platform18" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-1523, -368)
+
+[node name="platform19" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-1790, -422)
+
+[node name="platform20" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-2086, -497)
+
+[node name="platform21" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-2385, -565)
+
+[node name="platform22" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-2719, -619)
+
+[node name="platform23" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-3035, -694)
+
+[node name="platform24" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-3320, -762)
+
+[node name="platform25" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-3623, -827)
+
+[node name="platform26" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-3872, -916)
+
+[node name="platform27" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-4170, -984)
+
+[node name="platform28" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-4464, -1038)
+
+[node name="platform29" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-4767, -1113)
+
+[node name="platform30" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-5079, -1181)
+
+[node name="platform31" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-5346, -1235)
+
+[node name="platform32" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-5642, -1310)
+
+[node name="platform33" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-5941, -1378)
+
+[node name="platform34" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-6230, -1436)
+
+[node name="platform35" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-5942, -1526)
+
+[node name="platform36" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-5635, -1594)
+
+[node name="platform37" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-5323, -1648)
+
+[node name="platform38" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-5021, -1723)
+
+[node name="platform39" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-4714, -1791)
+
+[node name="platform40" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-4402, -1845)
+
+[node name="platform41" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-4120, -1920)
+
+[node name="platform42" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-3813, -1988)
+
+[node name="platform43" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-3501, -2042)
+
+[node name="platform44" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-3199, -2117)
+
+[node name="platform45" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-2892, -2185)
+
+[node name="platform46" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-2580, -2239)
+
+[node name="platform47" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-2317, -2306)
+
+[node name="platform48" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-2010, -2374)
+
+[node name="platform49" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-1698, -2428)
+
+[node name="platform50" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-1396, -2503)
+
+[node name="platform51" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-1089, -2571)
+
+[node name="platform52" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-777, -2625)
+
+[node name="platform53" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-495, -2700)
+
+[node name="platform54" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-188, -2768)
+
+[node name="platform55" parent="platform2/platform181" instance=ExtResource("1_mot0a")]
+position = Vector2(-492, -2858)
+
+[node name="platform14" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-261, -77)
+
+[node name="platform15" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-559, -145)
+
+[node name="platform16" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-853, -199)
+
+[node name="platform17" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-1156, -274)
+
+[node name="platform18" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-1468, -342)
+
+[node name="platform19" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-1735, -396)
+
+[node name="platform20" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-2031, -471)
+
+[node name="platform21" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-2330, -539)
+
+[node name="platform22" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-2664, -593)
+
+[node name="platform23" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-2980, -668)
+
+[node name="platform24" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-3265, -736)
+
+[node name="platform25" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-3568, -801)
+
+[node name="platform26" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-3817, -890)
+
+[node name="platform27" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-4115, -958)
+
+[node name="platform28" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-4409, -1012)
+
+[node name="platform29" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-4712, -1087)
+
+[node name="platform30" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-5024, -1155)
+
+[node name="platform31" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-5291, -1209)
+
+[node name="platform32" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-5587, -1284)
+
+[node name="platform33" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-5886, -1352)
+
+[node name="platform34" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-6175, -1410)
+
+[node name="platform35" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-5887, -1500)
+
+[node name="platform36" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-5580, -1568)
+
+[node name="platform37" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-5268, -1622)
+
+[node name="platform38" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-4966, -1697)
+
+[node name="platform39" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-4659, -1765)
+
+[node name="platform40" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-4347, -1819)
+
+[node name="platform41" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-4065, -1894)
+
+[node name="platform42" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-3758, -1962)
+
+[node name="platform43" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-3446, -2016)
+
+[node name="platform44" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-3144, -2091)
+
+[node name="platform45" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-2837, -2159)
+
+[node name="platform46" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-2525, -2213)
+
+[node name="platform47" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-2262, -2280)
+
+[node name="platform48" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-1955, -2348)
+
+[node name="platform49" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-1643, -2402)
+
+[node name="platform50" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-1341, -2477)
+
+[node name="platform51" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-1034, -2545)
+
+[node name="platform52" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-722, -2599)
+
+[node name="platform53" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-440, -2674)
+
+[node name="platform54" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(-133, -2742)
+
+[node name="platform55" parent="platform2/platform181/platform55" instance=ExtResource("1_mot0a")]
+position = Vector2(179, -2796)
+
+[node name="platform182" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(3545, -17816)
+
+[node name="platform183" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(3247, -17884)
+
+[node name="platform185" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2947, -17954)
+
+[node name="platform186" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2615, -18031)
+
+[node name="platform187" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2366, -18100)
+
+[node name="platform188" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(2067, -18175)
+
+[node name="platform189" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1725, -18268)
+
+[node name="platform190" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1414, -18342)
+
+[node name="platform191" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(1075, -18415)
+
+[node name="platform192" parent="platform2" instance=ExtResource("1_mot0a")]
+position = Vector2(763, -18472)
+
+[node name="Label" type="Label" parent="."]
+offset_left = -533.0
+offset_top = -60.0
+offset_right = -98.0
+offset_bottom = 77.0
+theme_override_font_sizes/font_size = 100
+text = "Level 4"
+
+[node name="Finish_L4" type="Area2D" parent="Label"]
+script = ExtResource("2_7nu3p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Label/Finish_L4"]
+position = Vector2(1296, -18446)
+shape = SubResource("RectangleShape2D_q8qlb")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_sjudg")]
+position = Vector2(0, -44)
+scale = Vector2(0.5, 0.5)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 717.0
+offset_top = -18542.0
+offset_right = 867.0
+offset_bottom = -18479.0
+text = "Finish Here"
+
+[connection signal="body_entered" from="Label/Finish_L4" to="Label/Finish_L4" method="_on_body_entered"]

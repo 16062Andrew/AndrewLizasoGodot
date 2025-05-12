@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://b7ps4gc1bjaiy"]
+
+[ext_resource type="Script" path="res://p_2.gd" id="1_evvg2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ip507"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_08y6s"]
+size = Vector2(20, 200)
+
+[node name="P2" type="CharacterBody2D"]
+platform_floor_layers = 4294967040
+script = ExtResource("1_evvg2")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+scale = Vector2(1, 10)
+shape = SubResource("RectangleShape2D_ip507")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 1, 1)
+texture = SubResource("PlaceholderTexture2D_08y6s")
