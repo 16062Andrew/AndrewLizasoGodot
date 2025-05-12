@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://oinc0h3kr0h1"]
+
+[ext_resource type="Script" path="res://death.gd" id="1_rx0ts"]
+[ext_resource type="AudioStream" uid="uid://skhvdr1k4kyn" path="res://assets/mixkit-keyboard-typing-1386.wav" id="2_rg6va"]
+
+[node name="death" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rx0ts")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 348.0
+offset_top = 86.0
+offset_right = 628.0
+offset_bottom = 269.0
+theme_override_font_sizes/font_size = 100
+text = "You Died"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 442.0
+offset_top = 379.0
+offset_right = 663.0
+offset_bottom = 456.0
+theme_override_font_sizes/font_size = 50
+text = "try again"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_rg6va")
+autoplay = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

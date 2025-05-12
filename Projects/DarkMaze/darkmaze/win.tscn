@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=3 uid="uid://cpsdmdicrakor"]
+
+[ext_resource type="Script" path="res://win.gd" id="1_gmwg5"]
+[ext_resource type="AudioStream" uid="uid://b8v3uwpp15yv3" path="res://assets/mixkit-cinematic-whoosh-fast-transition-1492.wav" id="2_8ajyu"]
+[ext_resource type="AudioStream" uid="uid://u63qu8r0eia5" path="res://assets/mixkit-clock-countdown-bleeps-916.wav" id="3_kfttw"]
+[ext_resource type="AudioStream" uid="uid://dfgww8483rocy" path="res://assets/mixkit-footsteps-on-tall-grass-532.wav" id="4_ujaf2"]
+
+[node name="Win" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gmwg5")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_8ajyu")
+autoplay = true
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_kfttw")
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_ujaf2")
+
+[node name="Label" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 457.0
+offset_top = 150.0
+offset_right = 677.0
+offset_bottom = 219.0
+theme_override_font_sizes/font_size = 50
+text = "You Win?"
+
+[node name="Button" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 403.0
+offset_top = 409.0
+offset_right = 711.0
+offset_bottom = 483.0
+disabled = true
+text = "Back to Start"
+
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="AudioStreamPlayer2" to="." method="_on_audio_stream_player_2_finished"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

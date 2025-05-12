@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3 uid="uid://cc0r72j0xtiou"]
+
+[ext_resource type="Script" path="res://enemy2.gd" id="1_wonut"]
+[ext_resource type="AudioStream" uid="uid://ckuwyd4slpou1" path="res://assets/mixkit-fast-blow-2144.wav" id="2_i7xsg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ejvn4"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_dlcx7"]
+size = Vector2(20, 20)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_xgp88"]
+polygon = PackedVector2Array(-10, -10, -10, 10, 10, 10, 10, -10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7me64"]
+
+[node name="enemy2" type="CharacterBody2D"]
+platform_floor_layers = 4294967040
+script = ExtResource("1_wonut")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ejvn4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+texture = SubResource("PlaceholderTexture2D_dlcx7")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+occluder = SubResource("OccluderPolygon2D_xgp88")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+modulate = Color(1, 1, 0, 1)
+scale = Vector2(100, 100)
+shape = SubResource("RectangleShape2D_7me64")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_i7xsg")
+volume_db = 24.0
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

@@ -1,0 +1,314 @@
+[gd_scene load_steps=24 format=3 uid="uid://dd6es15wfoey7"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_vifoh"]
+[ext_resource type="Texture2D" uid="uid://dh63f8cx15evt" path="res://assets/Player.png" id="2_784c2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1lfr4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tt6hn"]
+atlas = ExtResource("2_784c2")
+region = Rect2(0, 0, 1024, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_garu3"]
+atlas = ExtResource("2_784c2")
+region = Rect2(3072, 1024, 1024, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ftkke"]
+atlas = ExtResource("2_784c2")
+region = Rect2(0, 2048, 1024, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sggqe"]
+atlas = ExtResource("2_784c2")
+region = Rect2(1024, 2048, 1024, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mh6nv"]
+atlas = ExtResource("2_784c2")
+region = Rect2(2048, 2048, 1024, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kirny"]
+atlas = ExtResource("2_784c2")
+region = Rect2(3072, 2048, 1024, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hdedf"]
+atlas = ExtResource("2_784c2")
+region = Rect2(0, 3072, 1024, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0lv7y"]
+atlas = ExtResource("2_784c2")
+region = Rect2(1024, 3072, 1024, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f76ne"]
+atlas = ExtResource("2_784c2")
+region = Rect2(0, 0, 1024, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g45d6"]
+atlas = ExtResource("2_784c2")
+region = Rect2(1024, 0, 1024, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ywv6j"]
+atlas = ExtResource("2_784c2")
+region = Rect2(2048, 0, 1024, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m31wr"]
+atlas = ExtResource("2_784c2")
+region = Rect2(3072, 0, 1024, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eva2s"]
+atlas = ExtResource("2_784c2")
+region = Rect2(0, 1024, 1024, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wr75y"]
+atlas = ExtResource("2_784c2")
+region = Rect2(1024, 1024, 1024, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_waxil"]
+atlas = ExtResource("2_784c2")
+region = Rect2(2048, 1024, 1024, 1024)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cfydn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tt6hn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_garu3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ftkke")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sggqe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mh6nv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kirny")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hdedf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0lv7y")
+}],
+"loop": false,
+"name": &"hit",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f76ne")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g45d6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ywv6j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m31wr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eva2s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wr75y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_waxil")
+}],
+"loop": false,
+"name": &"moveing",
+"speed": 12.0
+}]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_xop1f"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_maw3k"]
+size = Vector2(1000, 1000)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_ul6lc"]
+polygon = PackedVector2Array(-10, -10, 15, -10, 15, -0.5, 10, -0.5, 10, 0.5, 15, 0.5, 15, 10, -10, 10)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_jtn2g"]
+size = Vector2(4, 1)
+
+[node name="Player" type="CharacterBody2D" groups=["player"]]
+scale = Vector2(2, 2)
+platform_floor_layers = 4294967040
+script = ExtResource("1_vifoh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_1lfr4")
+debug_color = Color(0, 0.6, 0.701961, 0.392157)
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-7.45058e-08, -7.45058e-08)
+scale = Vector2(0.0195312, 0.0195312)
+sprite_frames = SubResource("SpriteFrames_cfydn")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Stage1" type="Node2D" parent="."]
+visible = false
+scale = Vector2(1.295, 1.295)
+
+[node name="Sprite2D" type="Sprite2D" parent="Stage1"]
+modulate = Color(0, 0, 0, 0.341176)
+position = Vector2(0.5, -97)
+scale = Vector2(337, 85.5)
+texture = SubResource("PlaceholderTexture2D_xop1f")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Stage1"]
+modulate = Color(0, 0, 0, 0.341176)
+position = Vector2(0.5, 97)
+scale = Vector2(337, 85.5)
+texture = SubResource("PlaceholderTexture2D_xop1f")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Stage1"]
+modulate = Color(0, 0, 0, 0.341176)
+position = Vector2(97, 0)
+rotation = 1.5708
+scale = Vector2(337, 85.5)
+texture = SubResource("PlaceholderTexture2D_xop1f")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Stage1"]
+modulate = Color(0, 0, 0, 0.341176)
+position = Vector2(-97, 0)
+rotation = 1.5708
+scale = Vector2(337, 85.5)
+texture = SubResource("PlaceholderTexture2D_xop1f")
+
+[node name="Stage2" type="Node2D" parent="."]
+visible = false
+scale = Vector2(2.26, 2.26)
+
+[node name="Sprite2D" type="Sprite2D" parent="Stage2"]
+modulate = Color(0, 0, 0, 0.454902)
+position = Vector2(0.5, -97)
+scale = Vector2(337, 85.5)
+texture = SubResource("PlaceholderTexture2D_xop1f")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Stage2"]
+modulate = Color(0, 0, 0, 0.454902)
+position = Vector2(0.5, 97)
+scale = Vector2(337, 85.5)
+texture = SubResource("PlaceholderTexture2D_xop1f")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Stage2"]
+modulate = Color(0, 0, 0, 0.454902)
+position = Vector2(97, 0)
+rotation = 1.5708
+scale = Vector2(337, 85.5)
+texture = SubResource("PlaceholderTexture2D_xop1f")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Stage2"]
+modulate = Color(0, 0, 0, 0.454902)
+position = Vector2(-97, 0)
+rotation = 1.5708
+scale = Vector2(337, 85.5)
+texture = SubResource("PlaceholderTexture2D_xop1f")
+
+[node name="Stage3" type="Node2D" parent="."]
+visible = false
+scale = Vector2(3.31, 3.31)
+
+[node name="Sprite2D" type="Sprite2D" parent="Stage3"]
+modulate = Color(0, 0, 0, 0.670588)
+position = Vector2(0.5, -97)
+scale = Vector2(337, 85.5)
+texture = SubResource("PlaceholderTexture2D_xop1f")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Stage3"]
+modulate = Color(0, 0, 0, 0.670588)
+position = Vector2(0.5, 97)
+scale = Vector2(337, 85.5)
+texture = SubResource("PlaceholderTexture2D_xop1f")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Stage3"]
+modulate = Color(0, 0, 0, 0.670588)
+position = Vector2(97, 0)
+rotation = 1.5708
+scale = Vector2(337, 85.5)
+texture = SubResource("PlaceholderTexture2D_xop1f")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Stage3"]
+modulate = Color(0, 0, 0, 0.670588)
+position = Vector2(-97, 0)
+rotation = 1.5708
+scale = Vector2(337, 85.5)
+texture = SubResource("PlaceholderTexture2D_xop1f")
+
+[node name="Stage4" type="Node2D" parent="."]
+visible = false
+scale = Vector2(4.43, 4.43)
+
+[node name="Sprite2D" type="Sprite2D" parent="Stage4"]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(0.5, -97)
+scale = Vector2(337, 85.5)
+texture = SubResource("PlaceholderTexture2D_xop1f")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Stage4"]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(0.5, 97)
+scale = Vector2(337, 85.5)
+texture = SubResource("PlaceholderTexture2D_xop1f")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Stage4"]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(97, 0)
+rotation = 1.5708
+scale = Vector2(337, 85.5)
+texture = SubResource("PlaceholderTexture2D_xop1f")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Stage4"]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(-97, 0)
+rotation = 1.5708
+scale = Vector2(337, 85.5)
+texture = SubResource("PlaceholderTexture2D_xop1f")
+
+[node name="DarkLevel" type="Sprite2D" parent="."]
+visible = false
+modulate = Color(0, 0, 0, 0.572549)
+texture = SubResource("PlaceholderTexture2D_maw3k")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+occluder = SubResource("OccluderPolygon2D_ul6lc")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 20.0
+offset_top = 18.0
+offset_right = 140.0
+offset_bottom = 41.0
+theme_override_font_sizes/font_size = 20
+text = "Potato Count: 0"
+
+[node name="Label2" type="Label" parent="CanvasLayer"]
+visible = false
+offset_left = 174.0
+offset_top = 71.0
+offset_right = 952.0
+offset_bottom = 140.0
+theme_override_font_sizes/font_size = 50
+text = "GET BACK TO THE START QUIKLY"
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(14, 0)
+scale = Vector2(3.5, 3)
+color = Color(0, 0, 0, 1)
+energy = 16.0
+shadow_enabled = true
+texture = SubResource("PlaceholderTexture2D_jtn2g")
+texture_scale = 50.0
+
+[connection signal="animation_finished" from="Sprite2D" to="." method="_on_sprite_2d_animation_finished"]

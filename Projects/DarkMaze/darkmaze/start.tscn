@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=3 uid="uid://dok71efgorfyn"]
+
+[ext_resource type="Script" path="res://start.gd" id="1_d110w"]
+
+[node name="Start" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_d110w")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 283.0
+offset_top = 62.0
+offset_right = 885.0
+offset_bottom = 233.0
+theme_override_font_sizes/font_size = 100
+text = "Potato Maze"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 467.0
+offset_top = 231.0
+offset_right = 637.0
+offset_bottom = 306.0
+text = "WASD to move 
+Shift to sprint
+Cursor to look around"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 381.0
+offset_top = 401.0
+offset_right = 700.0
+offset_bottom = 478.0
+theme_override_font_sizes/font_size = 50
+text = "Start"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
